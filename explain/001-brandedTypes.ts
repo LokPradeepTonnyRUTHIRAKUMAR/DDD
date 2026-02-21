@@ -5,12 +5,15 @@
 // 4. Type safety and compile-time checks
 // 5. Factory functions
 
+type Euro = number
+
 /* Martin: check previos knowledge here  */
 
 /*  RESTAURANT DOMAIN   */
-const calculatePrice = (price: number, quantity: number): number => {
+const calculatePrice = (price: number, quantity: number): Euro => {
 	return price * quantity
 }
+
 // CAREFUL ! This function is very flexible but also very error-prone. It accepts any numbers !
 
 /*  manual tests   */
